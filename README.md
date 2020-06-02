@@ -25,6 +25,7 @@ if(true){
 ### 3、结合ES6新语法，用最简单的方式找出数组中的最小值？
 ```
 var arr = [12,34,32,89,4];
+console.log(Math.min(...arr));
 ```
 
 ### 4、请详细说明var,let,const三种声明变量的方式之间的具体差别？
@@ -57,7 +58,8 @@ obj.fn();
 
 ### 8、谈谈你是如何理解JS异步编程的，Event Loop是做什么的，什么宏任务，什么是微任务？
 Js异步编程，不同于同步编程的请求-响应模式，其是一种事件驱动编程，请求调用函数或方法后，无需立即等待响应，可以继续执行其他任务，而之前任务响应后可以通过状态、通知和回调来通知调用者。  
-Event Loop是一个程序结构，用于等待和发送消息和事件。  
+Event Loop是一个程序结构，用于等待和发送消息和事件。    
+
 
 
 
@@ -76,8 +78,15 @@ setTimeout(function () {
 ```
 改进：
 ```
-var promise = new Promise(function(resolve,reject){
-  
+new Promise((resolve,reject) => {
+    var a = "hello ";
+    resolve(a);
+}).then(function(res){
+    var b = "lagou ";
+    return res+b;
+}).then(function(res){
+    var c = "I love you";
+    console.log(res+c);
 });
 ```
 
