@@ -25,7 +25,6 @@ if(true){
 ### 3、结合ES6新语法，用最简单的方式找出数组中的最小值？
 ```
 var arr = [12,34,32,89,4];
-console.log(Math.min(...arr));
 ```
 
 ### 4、请详细说明var,let,const三种声明变量的方式之间的具体差别？
@@ -46,22 +45,27 @@ var obj = {
 }
 obj.fn();
 ```
-最终打印的结果为20，因为this指向的是当前的obj对象，所以this.a指向的就是当前obj的属性a。
 
 ### 6、简述Symbol类型的用途？ 
 作为对象的属性名使用，由于每一个Symbol值都是不相等的，所以把Symbol值作为标识符用于对象的属性名，可以保证不会出现同名的属性；  
 使用Symbol定义类的私有属性/方法。
 
 ### 7、说说什么是浅拷贝，什么是深拷贝？
-浅拷贝：对内存地址得复制，让目标对象指针和源对象指向同一片内存空间；  
-深拷贝：拷贝对象的具体内容，内存地址不一样，自主分配，两个对象互不影响。
 
 ### 8、谈谈你是如何理解JS异步编程的，Event Loop是做什么的，什么宏任务，什么是微任务？
+<<<<<<< HEAD
 Js异步编程，不同于同步编程的请求-响应模式，其是一种事件驱动编程，请求调用函数或方法后，无需立即等待响应，可以继续执行其他任务，而之前任务响应后可以通过状态、通知和回调来通知调用者。  
+<<<<<<< HEAD
 Event Loop是一个程序结构，用于等待和发送消息和事件。    
+宏任务：当前调用栈中执行的代码称为宏任务（如：setTimeout、setInterval);
+微任务：当前宏任务执行完，在下一个宏任务开始之前需要执行的任务（如promise.then catch finally）.
+=======
+Event Loop是一个程序结构，用于等待和发送消息和事件。  
 
 
-
+>>>>>>> parent of a40f1cd... Update README.md
+=======
+>>>>>>> parent of 2b96b15... Update README.md
 
 ### 9、将下面异步代码使用Promise改进？
 ```
@@ -76,24 +80,13 @@ setTimeout(function () {
   },10);
 },10);
 ```
-改进：
-```
-new Promise((resolve,reject) => {
-    var a = "hello ";
-    resolve(a);
-}).then(function(res){
-    var b = "lagou ";
-    return res+b;
-}).then(function(res){
-    var c = "I love you";
-    console.log(res+c);
-});
-```
+
 
 ### 10、请简述TypeScript与JavaScript之间的关系？
-TypeScript是一门独立的编程语言，是JavaScript的超集，包含JavaScript、ES6、类型系统，以面向对象编程的方式使用JavaScript,代码最后编译成JavaScript。
 
 ### 11、请谈谈你所认为的TypeScript优缺点？
-优点：提供强大的类型系统，可以在编译阶段发现错误；
+<<<<<<< HEAD
+优点：提供强大的类型系统，可以在编译阶段发现错误；  
 缺点：有一定的学习成本，对于小型项目开发会增加开发成本。
-
+=======
+>>>>>>> parent of 2b96b15... Update README.md
