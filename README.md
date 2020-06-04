@@ -59,13 +59,15 @@ Js异步编程，不同于同步编程的请求-响应模式，其是一种事�
 Event Loop是一个程序结构，用于等待和发送消息和事件。    
 宏任务：当前调用栈中执行的代码称为宏任务（如：setTimeout、setInterval);
 微任务：当前宏任务执行完，在下一个宏任务开始之前需要执行的任务（如promise.then catch finally）.
+<<<<<<< HEAD
 =======
 Event Loop是一个程序结构，用于等待和发送消息和事件。  
-
 
 >>>>>>> parent of a40f1cd... Update README.md
 =======
 >>>>>>> parent of 2b96b15... Update README.md
+=======
+>>>>>>> 9d99c147cd9a4c31338da45a85c85c538ea70e15
 
 ### 9、将下面异步代码使用Promise改进？
 ```
@@ -81,12 +83,16 @@ setTimeout(function () {
 },10);
 ```
 
-
 ### 10、请简述TypeScript与JavaScript之间的关系？
 
 ### 11、请谈谈你所认为的TypeScript优缺点？
+<<<<<<< HEAD
 <<<<<<< HEAD
 优点：提供强大的类型系统，可以在编译阶段发现错误；  
 缺点：有一定的学习成本，对于小型项目开发会增加开发成本。
 =======
 >>>>>>> parent of 2b96b15... Update README.md
+=======
+优点：提供强大的类型系统，可以在编译阶段发现错误；  
+缺点：有一定的学习成本，对于小型项目开发会增加开发成本。
+
